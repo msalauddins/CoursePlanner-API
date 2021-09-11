@@ -1,0 +1,41 @@
+{
+  "name": "express-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "talk": "echo \"Print a message before running......\" && node index.js",
+    "reset": "echo \"Preparing to reset database...\" && mongo scripts/reset-db.js && echo \"----------Reset database successfully----------\"",
+    "add": "echo \"Preparing to show database...\" && mongo scripts/add-db.js",
+    "drop": "echo \"Preparing to drop database...\" && mongo scripts/drop-db.js;",
+    "test": "mocha test/test.js;"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "auth0-js": "^9.10.2",
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "circular-json": "^0.5.9",
+    "connect-timeout": "^1.9.0",
+    "email-templates": "^5.0.5",
+    "expect.js": "^0.3.1",
+    "express": "^4.16.4",
+    "express-prettify": "^0.1.1",
+    "install": "^0.12.2",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^6.1.4",
+    "mongod": "^2.0.0",
+    "mongoose": "^5.5.5",
+    "npm": "^6.9.0",
+    "pug": "^2.0.3",
+    "request": "^2.88.0",
+    "should": "^13.2.3",
+    "superagent": "^5.0.5",
+    "supertest": "^4.0.2",
+    "update": "^0.7.4"
+  }
+}
